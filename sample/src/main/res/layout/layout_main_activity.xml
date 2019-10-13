@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/downloadPreferenceHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Preference"
+        android:textSize="18sp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Media"
+        android:textSize="15sp"
+        android:layout_below="@id/downloadPreferenceHeader"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"/>
+
+    <ss.anoop.awesomeswitch.AwesomeSwitch
+        android:id="@+id/downloadMediaSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:radius="12dp"
+        app:checkedColor="#000"
+        app:backgroundColor="#000"
+        app:checkedBackgroundColor="#53e079"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/downloadPreferenceHeader"
+        android:layout_margin="8dp"/>
+
+    <View
+        android:id="@+id/downloadMediaDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/downloadMediaSwitch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download only over Wi-Fi"
+        android:textSize="15sp"
+        android:layout_below="@id/downloadMediaDivider"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"/>
+
+    <ss.anoop.awesomeswitch.AwesomeSwitch
+        android:id="@+id/downloadWifiSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:radius="12dp"
+        app:checkedColor="#53e079"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/downloadMediaDivider"
+        android:layout_margin="8dp"/>
+
+    <View
+        android:id="@+id/downloadWifiDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/downloadWifiSwitch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloaded media on Gallery"
+        android:textSize="15sp"
+        android:layout_below="@id/downloadWifiDivider"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"/>
+
+    <ss.anoop.awesomeswitch.AwesomeSwitch
+        android:id="@+id/downloadGallerySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:radius="12dp"
+        app:checkedColor="#53e079"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/downloadWifiDivider"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/playbackHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playback Preference"
+        android:textSize="18sp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_below="@id/downloadGallerySwitch"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto play next"
+        android:textSize="15sp"
+        android:layout_below="@id/playbackHeader"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"/>
+
+    <ss.anoop.awesomeswitch.AwesomeSwitch
+        android:id="@+id/autoPlaySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:radius="12dp"
+        app:isChecked="true"
+        app:backgroundColor="#bbb"
+        app:checkedColor="#53e079"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/playbackHeader"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>
