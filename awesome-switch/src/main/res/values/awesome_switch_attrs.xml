@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AwesomeSwitch">
+        <attr name="radius" format="dimension" />
+        <attr name="checkedColor" format="color"/>
+        <attr name="uncheckedColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="checkedBackgroundColor" format="color"/>
+        <attr name="innerPadding" format="dimension"/>
+        <attr name="isChecked" format="boolean"/>
+        <attr name="animationDuration" format="integer"/>
+    </declare-styleable>
+</resources>

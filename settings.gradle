@@ -1,0 +1,2 @@
+rootProject.name='Awesome Switch'
+include ':sample', 'awesome-switch'
