@@ -5,9 +5,6 @@ AwesomeSwitch is a replacement for the standard Switch(View) android offers, and
 
 ## Adding to project
 
-
-
-## Usage
 ### Gradle 
 Add below code to your **root** `build.gradle` file (if you have multiple modules and only one of them require `AwesomeSwitch`, add the `jcenter()` repository only in that module's `build.gradle`).
 ```gradle
@@ -25,6 +22,7 @@ dependencies {
 ```
 AwesomeSWitch can be included in your layout xml like any other view. Below is a simple example
 
+## Usage
 ```xml 
 <ss.anoop.awesomeswitch.AwesomeSwitch
     android:layout_width="wrap_content"
