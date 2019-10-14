@@ -1,10 +1,28 @@
-# AwesomeSwitch
+# AwesomeSwitch [ ![Download](https://api.bintray.com/packages/anoop44/maven/awesome-switch/images/download.svg) ](https://bintray.com/anoop44/maven/awesome-switch/_latestVersion)
 AwesomeSwitch is a replacement for the standard Switch(View) android offers, and it offers much more customization than the standard switch component.
 
 ![gif of AwesomeSwitch in use](https://raw.githubusercontent.com/anoop44/AwesomeSwitch/master/art/awesome-switch.gif)
 
+## Adding to project
+
+
 
 ## Usage
+### Gradle 
+Add below code to your **root** `build.gradle` file (if you have multiple modules and only one of them require `AwesomeSwitch`, add the `jcenter()` repository only in that module's `build.gradle`).
+```gradle
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+```
+And add the following dependency code to your **module**'s `build.gradle` file.
+```gradle
+dependencies {
+    implementation "ss.anoop:awesome-switch:${latest-version}"
+}
+```
 AwesomeSWitch can be included in your layout xml like any other view. Below is a simple example
 
 ```xml 
