@@ -1,7 +1,7 @@
 # AwesomeSwitch
 AwesomeSwitch is a replacement for the standard Switch(View) android offers, and it offers much more customization than the standard switch component.
 
-![gif of AwesomeSwitch in use](https://github.com/anoop44/AwesomeSwitch/art/awesome-switch.gif)
+![gif of AwesomeSwitch in use](art/awesome-switch.gif)
 
 
 ## Usage
